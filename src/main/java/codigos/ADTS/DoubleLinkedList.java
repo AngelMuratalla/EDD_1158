@@ -189,7 +189,7 @@ public class DoubleLinkedList<T> {
     }
 
     /**
-     * Recorrido por la lista 1 inicio a fin, 2 fin a inicio
+     * Recorrido por la lista 0 = inicio a fin, -1 = fin a inicio
      * @param direccion
      */
     public void transversal(int direccion) {
@@ -215,5 +215,13 @@ public class DoubleLinkedList<T> {
         a.agregarAlFinal(6);
         a.transversal(1);
         a.transversal(2);
+        a.agregarAlInicio("Inicio");
+        a.agregarDespuesDe(4, "Hola");
+        a.transversal(1);
+        a.actualizar("Hola", "HOLAAAAA");
+        System.out.println(a.buscar("HOLAAAAA"));
+        a.eliminarInicio();
+        a.eliminarFinal();
+        a.transversal(1);
     }
 }
