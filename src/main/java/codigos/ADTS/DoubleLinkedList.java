@@ -189,7 +189,7 @@ public class DoubleLinkedList<T> {
     }
 
     /**
-     * Recorrido por la lista 0 = inicio a fin, -1 = fin a inicio
+     * Recorrido por la lista 1 = inicio a fin, 2 = fin a inicio
      * @param direccion
      */
     public void transversal(int direccion) {
