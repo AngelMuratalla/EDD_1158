@@ -9,12 +9,12 @@ import javax.swing.JPanel;
 
 public class SolucionPorPasos extends JPanel {
 
-    Laberinto2 laberinto;
+    Laberinto laberinto;
     ArrayList<ArrayList<String>> archivo = new ArrayList();
 
     public SolucionPorPasos(String ruta) {
         LectorArchivo.leerArchivo(ruta, archivo);
-        laberinto = new Laberinto2(archivo);
+        laberinto = new Laberinto(archivo);
     }
 
     @Override

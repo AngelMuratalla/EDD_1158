@@ -6,7 +6,7 @@ import java.awt.Color;
 import java.awt.Graphics;
 import java.util.ArrayList;
 
-public class Laberinto2 {
+public class Laberinto {
 
     private final Stack<ArrayList<Integer>> pila = new Stack();
     private final Array2DADT matriz;
@@ -16,7 +16,7 @@ public class Laberinto2 {
     private boolean solucion = true;
     private String resultado;
 
-    public Laberinto2(ArrayList<ArrayList<String>> archivo) {
+    public Laberinto(ArrayList<ArrayList<String>> archivo) {
         this.numFilas = Integer.parseInt(archivo.get(0).get(0));
         this.numColumnas = Integer.parseInt(archivo.get(1).get(0));
         this.matriz = new Array2DADT(numFilas, numColumnas);
