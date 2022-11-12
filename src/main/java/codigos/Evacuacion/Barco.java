@@ -1,10 +1,10 @@
 package codigos.Evacuacion;
 
-import codigos.ADTS.BoundedPriorityQueue2;
+import codigos.ADTS.BoundedPriorityQueue;
 
-public class Barco2 {
+public class Barco {
     public static void main(String[] args) {
-        BoundedPriorityQueue2<String> abordo = new BoundedPriorityQueue2(7);
+        BoundedPriorityQueue<String> abordo = new BoundedPriorityQueue(7);
         //Grupo de personas que están abordo
         abordo.enqueue(4, "Maestre");
         abordo.enqueue(2, "Niños");

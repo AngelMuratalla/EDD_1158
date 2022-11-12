@@ -6,7 +6,7 @@ import java.util.ArrayList;
  * @author AngelMuratalla
  * @param <T>
  */
-public class Queue2 <T>{
+public class Queue <T>{
 
     private final ArrayList<T> college;
     private int size;
@@ -15,7 +15,7 @@ public class Queue2 <T>{
      * Crea una lista vacía para almacenar los datos 
      * de la cola
      */
-    public Queue2() {
+    public Queue() {
         college = new ArrayList();
     }
 
@@ -67,7 +67,7 @@ public class Queue2 <T>{
     }
     
     public static void main(String[] args) {
-        Queue2 a = new Queue2();
+        Queue a = new Queue();
         a.enqueue("1");
         a.enqueue("2");
         a.enqueue("3");

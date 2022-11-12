@@ -6,9 +6,9 @@ import java.util.HashMap;
  * @author AngelMuratalla
  * @param <T>
  */
-public class BoundedPriorityQueue2 <T>{
+public class BoundedPriorityQueue <T>{
 
-    private final HashMap<Integer, Queue2<T>> collection; 
+    private final HashMap<Integer, Queue<T>> collection; 
     private int numElements;
     private int highPriority;
     
@@ -17,10 +17,10 @@ public class BoundedPriorityQueue2 <T>{
      * datos en un HashMap
      * @param levels - cantidad de niveles de prioridad
      */
-    public BoundedPriorityQueue2(int levels) {
+    public BoundedPriorityQueue(int levels) {
         collection = new HashMap(levels);
         for (int key = 0; key < levels; key++) {
-            collection.put(key, new Queue2());
+            collection.put(key, new Queue());
         }
     }
     
