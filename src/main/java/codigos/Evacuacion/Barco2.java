@@ -1,11 +1,11 @@
-
 package codigos.Evacuacion;
 
-import codigos.ADTS.BoundedPriorityQueue;
+import codigos.ADTS.BoundedPriorityQueue2;
 
-public class Barco {
+public class Barco2 {
     public static void main(String[] args) {
-        BoundedPriorityQueue<String> abordo = new BoundedPriorityQueue(7);
+        BoundedPriorityQueue2<String> abordo = new BoundedPriorityQueue2(7);
+        //Grupo de personas que están abordo
         abordo.enqueue(4, "Maestre");
         abordo.enqueue(2, "Niños");
         abordo.enqueue(4, "Mecanico");
@@ -16,6 +16,7 @@ public class Barco {
         abordo.enqueue(4, "Vigia");
         abordo.enqueue(5, "Capitan");
         abordo.enqueue(4, "Timonel");
+        //Vamos a evacuarlos hasta que la cola este vacía
         while(!abordo.isEmpty()){
             System.out.printf("%s han evacuado el barco %n", abordo.dequeue());
         }
