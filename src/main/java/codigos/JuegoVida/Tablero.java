@@ -2,6 +2,9 @@
 package codigos.JuegoVida;
 
 import codigos.ADTS.Array2DADT;
+import java.awt.Color;
+import java.awt.Graphics;
+import javax.swing.JPanel;
 
 /**
  * Clase principal que lleva el control de la posición y estado de celulas
@@ -18,6 +21,27 @@ public final class Tablero {
     public Tablero() {
         this.tablero = new Array2DADT(10, 10);
         limpiarTablero();
+    }
+    
+        public void paint(Graphics grafico) {
+        int anchoBloque = 40;
+        int altoBloque = 40;
+        for (int filas = 0; filas < 10; filas++) {
+            for (int columnas = 0; columnas < 10; columnas++) {
+                switch (tablero.getElemento(filas, columnas).toString()) {
+                    case "M":
+                        grafico.setColor(Color.RED);
+                        grafico.fillRect(columnas * anchoBloque, filas * altoBloque, anchoBloque, altoBloque);
+                        grafico.setColor(Color.black);
+                        grafico.drawRect(columnas * anchoBloque, filas * altoBloque, anchoBloque, altoBloque);
+                        break;
+                    case "V":
+                        grafico.setColor(Color.GREEN);
+                        grafico.fillRect(columnas * anchoBloque, filas * altoBloque, anchoBloque, altoBloque);
+                        break;
+                }
+            }
+        }
     }
 
     /**

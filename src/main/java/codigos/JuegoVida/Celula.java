@@ -33,14 +33,14 @@ public class Celula {
     }
 
     /**      
-     * @return 0 = viva, . = muerta 
+     * @return V = viva, M = muerta 
      */
     @Override
     public String toString() {
          if (estado) {
-            return "0";
+            return "V";
         }else{
-            return ".";
+            return "M";
         }
     }
 }
