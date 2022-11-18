@@ -9,7 +9,7 @@ package codigos.ADTS;
 public class Nodo<T> {
 
     private T dato;
-    private Nodo siguiente;
+    private Nodo<T> siguiente;
 
     public Nodo() {
     }

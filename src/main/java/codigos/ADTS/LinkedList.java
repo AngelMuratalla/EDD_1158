@@ -102,6 +102,21 @@ public class LinkedList<T> {
         }
         return posicion;
     }
+    
+    public T obtener(T dato) {
+        Nodo<T> aux = this.head;
+        if (this.estaVacia()) {
+            return null;
+        } 
+        while(aux.getDato().equals(dato) && aux.getSiguiente().getSiguiente() != null){
+            aux = aux.getSiguiente();
+        }
+        return aux.getDato();
+    }
+    
+    public static void main(String[] args) {
+        
+    }
 
     public void transversal() {
         System.out.println(this.head.printAll());

@@ -184,8 +184,8 @@ public class DoubleLinkedList<T> {
     /**
      * @return Final de la lista
      */
-    public DoubleNodo<T> getFinal() {
-        return this.cola;
+    public T getFinal() {
+        return this.cola.getDato();
     }
 
     /**
