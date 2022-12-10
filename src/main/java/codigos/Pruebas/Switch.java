@@ -27,12 +27,15 @@ public class Switch implements Comparable{
     
     
     public static void main(String[] args) {
+        
+        
         Integer a = 2;
         Integer b = 2;
         Switch s1 = new Switch();
         Switch s2 = new Switch();
         Switch[] sts = {s1, s2};
-        ArrayList college = new ArrayList();
+        ArrayList<Integer> college = new ArrayList();
+
         for (Switch sp : sts) {
             System.out.println(sp);
         }
